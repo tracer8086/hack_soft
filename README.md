@@ -15,3 +15,4 @@ May be I will expand this program.
 
 Use at at your own risk.
 Author isn't liable for users's action.
+Intended for studying only.
