@@ -10,6 +10,7 @@
 #include "thread_functions.h"
 #include "io_extended.h"
 #pragma comment(lib, "ws2_32.lib")
+#pragma warning(disable: 4996)
 
 int main(void)
 {
@@ -53,7 +54,7 @@ int main(void)
 	std::cin.getline(message, MAX_BYTE);
 
 	//receiving the data
-#pragma warning(disable: 4996)
+
 	HOSTENT* remote_host_info = gethostbyname(h_name);
 
 	if (remote_host_info == NULL)
