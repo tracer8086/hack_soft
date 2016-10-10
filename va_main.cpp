@@ -9,6 +9,7 @@
 #include <Windows.h>
 #include <algorithm>
 #pragma comment(lib, "ws2_32.lib")
+#pragma warning(disable: 4996)
 
 void scan(int from, int to, std::mutex& obj, char* addr);
 void socket_connect(sockaddr_in host, std::mutex& obj);
@@ -47,7 +48,6 @@ int main(void)
 	std::cout << "Enter a host name >> ";
 	std::cin.getline(h_name, MAXGETHOSTSTRUCT);
 
-#pragma warning(disable: 4996)
 	HOSTENT* remote_host_info = gethostbyname(h_name);
 
 	if (remote_host_info == NULL)
