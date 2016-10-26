@@ -11,14 +11,14 @@
 #pragma comment(lib, "ws2_32.lib")
 #pragma warning(disable: 4996)
 
+#define PORTS_IN_THREAD 100
+#define NUMBER_OF_PORTS 65536
+
 void scan(int from, int to, std::mutex& obj, char* addr);
 void socket_connect(sockaddr_in host, std::mutex& obj);
 
 int main(void)
 {
-#define PORTS_IN_THREAD 100
-#define NUMBER_OF_PORTS 65536
-
 	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_GREEN | FOREGROUND_INTENSITY);
 
 	std::cout << "R-Scan v1.01 by NightGhost" << std::endl
