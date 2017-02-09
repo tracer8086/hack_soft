@@ -10,7 +10,7 @@ inline void clear_istream(std::istream& stream)
 		;
 }
 
-template <typename numeric> void check_error(std::istream& stream, numeric& x)
+void check_error(std::istream& stream)
 {
 	while (!(stream >> x))
 		{
