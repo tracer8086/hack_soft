@@ -5,7 +5,7 @@ attack (DDoS).
 
 DoS client establishes many of TCP connections to specified host
 on port 80 (web port) and sends many of user's messages to the host
-in order to overload his request queue.
+in order to overload its request queue.
 
 ATTENTION: don't use this program on the uninuclear PC.
 Your data transmission medium can be overloaded.
